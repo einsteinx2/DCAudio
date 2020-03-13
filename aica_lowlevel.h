@@ -23,6 +23,11 @@
 // ============================================================================
 // Addresses
 // ============================================================================
+//
+// ARM7_AICA_BASE is the base address when running on the AICA itself. G2_AICA_BASE
+// is for the SH4 to access the AICA's registers. So if compiled with an ARM
+// compiler to run on the AICA, use ARM7_AICA_BASE instead of G2_AICA_BASE.
+//
 
 #define G2_AICA_BASE 0xa0700000
 #define ARM7_AICA_BASE 0x00800000
